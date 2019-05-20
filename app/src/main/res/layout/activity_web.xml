@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <!--<com.ksyun.media.player.KSYTextureView-->
+        <!--android:background="@color/black"-->
+        <!--android:id="@+id/player_web"-->
+        <!--android:layout_width="510px"-->
+        <!--android:layout_height="287px"-->
+        <!--android:layout_marginLeft="385px"-->
+        <!--android:layout_marginTop="161px"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">映霸电视</string>
+    <string name="version">0.0.1</string>
+    <!--
+    <string name="portal_url">http://192.168.56.1/index1.html</string>
+    <string name="portal_url">http://172.18.128.6:8088/epg/hdvod/biz_01809636.do</string>
+    <string name="portal_url">http://206.222.15.16:8088/epg/hdvod/biz_01809636.do</string>
+      -->
+
+    <string name="portal_url">http://172.18.128.12/epg/index/hdvod.do</string>
+
+    <string name="error_url">file:///android_asset/index.html</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="title_activity_demo">DemoActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

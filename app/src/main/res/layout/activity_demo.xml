@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!--SurfaceView 视频层-->
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginTop="0.0dip"/>
+
+
+    <!--
+
+    <ImageView
+        android:id="@+id/bgimg_div"
+        android:layout_width="2560px"
+        android:layout_height="258px"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/playbgimg"
+        android:maxWidth="2568px"
+        android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/playslider_div"
+            android:layout_width="1125px"
+            android:layout_height="20px"
+            android:layout_alignBottom="@+id/current_time"
+            android:layout_alignLeft="@+id/current_time"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="0px"
+            android:src="@drawable/playsliderbgimg"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/playcursor_div"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignBottom="@+id/current_time"
+            android:layout_alignLeft="@+id/current_time"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="-15px"
+            android:src="@drawable/playcursor"
+            android:visibility="gone"/>
+    -->
+
+    <ImageView
+        android:id="@+id/play_div"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignBottom="@+id/mySeekBar"
+        android:layout_marginBottom="-7dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/play"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_above="@+id/play_div"
+        android:layout_alignLeft="@+id/mySeekBar"
+        android:layout_alignStart="@+id/mySeekBar"/>
+
+    <TextView
+        android:id="@+id/current_time"
+        android:layout_width="160px"
+        android:layout_height="45px"
+        android:textSize="20sp"
+        android:text="00:00:00"
+        android:visibility="gone"
+        android:layout_alignBaseline="@+id/duration_time"
+        android:layout_alignBottom="@+id/duration_time"
+        android:layout_alignLeft="@+id/mySeekBar"
+        android:layout_alignStart="@+id/mySeekBar"/>
+
+    <TextView
+        android:id="@+id/duration_time"
+        android:layout_width="160px"
+        android:layout_height="45px"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:textSize="20sp"
+        android:text="00:00:01"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <!-- 快进快退图标-->
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="33.0dip"
+        android:layout_height="20.0dip"
+        android:layout_above="@+id/mySeekBar"
+        android:layout_alignLeft="@+id/duration_time"
+        android:layout_alignStart="@+id/duration_time"
+        android:layout_alignTop="@+id/title"
+        android:layout_marginRight="-20px"
+        android:src="@drawable/forward"
+        android:visibility="gone"/>
+
+
+    <SeekBar
+        android:id="@+id/mySeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="40px"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:layout_above="@+id/current_time"
+        android:layout_toRightOf="@+id/play_div"
+        android:layout_toEndOf="@+id/play_div"
+        android:layout_alignRight="@+id/duration_time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <!--播放方式 IP  QAM-->
+    <TextView
+        android:id="@+id/cable"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_alignRight="@+id/duration_time"
+        android:layout_alignTop="@+id/title"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="-20px"
+        android:text=" "
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
